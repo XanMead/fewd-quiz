@@ -1,0 +1,19 @@
+* {
+	outline: 1px solid red;
+}
+
+#container {
+	margin: 6rem auto 0 auto;
+	width: 80%;
+}
+
+/* For this style to work, width must equal font-size..
+ * In addition, a monospace font should be used */
+.vertical {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 2rem;
+	font-family: 'Nova Mono', monospace;
+	font-size: 2rem;
+	vertical-align: top;
+}
