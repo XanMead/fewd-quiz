@@ -6,7 +6,8 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/torii-favicon.png">
-	<link href='http://fonts.googleapis.com/css?family=Nova+Mono' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo|Nova+Mono' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -15,17 +16,37 @@
 			<div class="vertical">Mythology</div>
 			<div class="vertical">Quiz</div>
 		</header>
-		<div class="quiz-intro midbox">
+		<div class="quiz-intro midbox" style="display: none;">
 
 		</div>
 		<div class="midbox" id="question-box">
-
+			<h3 class="box-sizing" id="question-text">
+				Which of these items was not cause for the Moon God Tsukiyomi to murder Uke Mochi, the Goddess of Food?
+			</h3>
+			<img id="question-pic" src="images/q-images/uke_mochi.jpg">
+			<ul id="option-list">
+				<li class="option" id="opt-0">Fish</li>
+				<li class="option" id="opt-1">Azuki Beans</li>
+				<li class="option" id="opt-2">Game</li>
+				<li class="option" id="opt-3">Rice</li>
+			</ul>
+			<button id="submit">Submit</button>
 		</div>
-		<div class="status">
-
+		<div class="status-box">
+			<h2 class="vertical">Question <span id="q-number">4</span></h2>
+			<div id="progress">
+				<img src="images/light-p.png" id="p-0">
+				<img src="images/dark-p.png" id="p-1">
+				<img src="images/light-p.png" id="p-2">
+				<img src="images/no-p.png" id="p-3">
+				<img src="images/no-p.png" id="p-4">
+			</div>
 		</div>
-		<footer>
-			
+		<footer class="credit-box">
+			<h4 class="show-credits">Credits</h4>
+			<ul class="credit-list">
+
+			</ul>
 		</footer>
 	</div>
 </body>

@@ -1,5 +1,21 @@
+/*
 * {
 	outline: 1px solid red;
+}
+/**/
+
+.box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/ink-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: left;
 }
 
 #container {
@@ -11,9 +27,112 @@
  * In addition, a monospace font should be used */
 .vertical {
 	display: inline-block;
+	text-align: center;
 	word-wrap: break-word;
 	width: 2rem;
-	font-family: 'Nova Mono', monospace;
+	padding: 0.5rem 0;
+	margin-bottom: 1rem;
 	font-size: 2rem;
+	font-family: 'Nova Mono', monospace;
+	color: #eee;
+	background-color: #111;
+	border: 2px solid #C91515;
+	border-radius: 5px;
 	vertical-align: top;
+}
+
+.titles {
+	vertical-align: top;
+	text-align: right;
+	display: inline-block;
+	width: 15%;
+}
+
+.midbox {
+	display: inline-block;
+	width: 70%;
+	border-radius: 8px;
+	background-image: url(../images/parchment-bg.jpg);
+}
+
+#question-text {
+	font-family: 'Arvo', Georgia, sans-serif;
+	font-size: 1.25rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+#question-pic {
+	margin: 1rem;
+	width: 30%;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 8px;
+}
+
+#option-list {
+	display: inline-block;
+	vertical-align: top;
+	width: 70%;
+}
+
+.option {
+	font-family: 'Arvo', Georgia, sans-serif;
+	text-align: center;
+}
+
+#submit {
+
+}
+
+.status-box {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+}
+
+#q-number {
+	margin-top: 0.25rem;
+}
+
+#progress {
+	position: relative;
+	height: 90px;
+	width: 90px;
+	background-color: #111;
+	border: 2px solid #C91515;
+	border-radius: 50%;
+}
+
+#progress > img {
+	position: absolute;
+	width: 80px;
+	height: auto;
+	margin: 1rem auto;
+	left: 5px;
+	top: -11px;
+}
+
+#p-1 {
+	-ms-transform: rotate(72deg); /* IE 9 */
+	-webkit-transform: rotate(72deg); /* Chrome, Safari, Opera */
+	transform: rotate(72deg);
+}
+
+#p-2 {
+	-ms-transform: rotate(144deg); /* IE 9 */
+	-webkit-transform: rotate(144deg); /* Chrome, Safari, Opera */
+	transform: rotate(144deg);
+}
+
+#p-3 {
+	-ms-transform: rotate(216deg); /* IE 9 */
+	-webkit-transform: rotate(216deg); /* Chrome, Safari, Opera */
+	transform: rotate(216deg);
+}
+
+#p-4 {
+	-ms-transform: rotate(288deg); /* IE 9 */
+	-webkit-transform: rotate(288deg); /* Chrome, Safari, Opera */
+	transform: rotate(288deg);
 }
