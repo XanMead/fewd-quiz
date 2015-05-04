@@ -56,8 +56,9 @@ body {
 }
 
 #question-text {
-	font-family: 'Arvo', Georgia, sans-serif;
+	font-family: 'Arvo', Georgia, serif;
 	font-size: 1.25rem;
+	font-weight: 700;
 	text-align: center;
 	padding: 1rem;
 }
@@ -68,21 +69,48 @@ body {
 	height: auto;
 	border: 2px solid black;
 	border-radius: 8px;
+	vertical-align: middle;
 }
 
 #option-list {
 	display: inline-block;
+	text-align: center;
+	width: 60%;
 	vertical-align: top;
-	width: 70%;
 }
 
 .option {
-	font-family: 'Arvo', Georgia, sans-serif;
+	font-family: 'Arvo', Georgia, serif;
+	font-size: 1.25rem;
 	text-align: center;
+	padding: 1rem;
+	margin: 1rem 0;
+	border: 2px dashed #1C1212;
+	border-radius: 10px;
+}
+
+.option:hover {
+	background-color: #202333;
+	color: white;
+	cursor: pointer;
 }
 
 #submit {
+	display: inline-block;
+	margin: 0.5rem auto;
+	text-align: center;
+	width: 100px;
+	font-family: "Nova Mono", monospace;
+	font-size: 1.5rem;
+	color: #E6D06E;
+	background-color: #1C1212;
+	border: none;
+	border-radius: 10px;
+}
 
+#submit:hover {
+	color: #968430;
+	cursor: pointer;
 }
 
 .status-box {
@@ -92,7 +120,7 @@ body {
 }
 
 #q-number {
-	margin-top: 0.25rem;
+	padding-top: 0.5rem;
 }
 
 #progress {
@@ -135,4 +163,27 @@ body {
 	-ms-transform: rotate(288deg); /* IE 9 */
 	-webkit-transform: rotate(288deg); /* Chrome, Safari, Opera */
 	transform: rotate(288deg);
+}
+
+.credit-box {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: url(../images/footer-bg.png);
+	text-align: center;
+	padding: 0.5rem;
+	border-top: 2px solid black;
+	box-shadow: 0px -4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.show-credits {
+	display: inline-block;
+	color: #bbb;
+	text-decoration: underline;
+	font-family: 'Arvo', Georgia, serif;
+}
+
+.show-credits:hover {
+	cursor: pointer;
 }
