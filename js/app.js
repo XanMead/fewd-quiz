@@ -1,5 +1,9 @@
 $(document).ready(function() {
-	newGame();	
+	populateCache();
+	newGame();
+
+	// Start button handler
+	$('#start').on('click', function() {startGame();})
 });
 
 function Question(questionText, optRight, opt1, opt2, opt3, picName) {
@@ -53,6 +57,7 @@ function chooseGameQuestions() {
 	gameQuestions = new Array();
 	shuffle(questionCache);
 	for (var i = 0; i < 5; i++) {
+		console.log(gameQuestions[i]);
 		gameQuestions[i] = questionCache[i];
 		gameQuestions[i].shuffleAnswers();
 	}
@@ -62,7 +67,7 @@ function newGame() {
 	chooseGameQuestions();
 	qNumber = 0;
 
-	resetBlossom();
+	resetBlossoms();
 
 	$('#question-box').hide();
 	$('#end-box').hide();
@@ -71,10 +76,19 @@ function newGame() {
 	$('#quiz-intro').show();
 }
 
+/* Move from intro page to first question. */
+function startGame() {
+	$('#quiz-intro').hide();
+
+	$('#question-box').show();
+	$('.status-box').show();
+	propagateQuestion(gameQuestions[0]);
+}
+
 /* q must be a Question object */
 function propagateQuestion(q) {
 	// increment question number
-	$('#q-number').text(qNumber++);
+	$('#q-number').text(++qNumber);
 	
 	// set question text
 	$('#question-text').text(q.questionText);
@@ -114,6 +128,6 @@ function shuffle(array) {
 		r = Math.floor(Math.random() * i),
 		x = array[--i],
 		array[i] = array[r],
-		array[j] = x);
+		array[r] = x);
 	return array;
 }
