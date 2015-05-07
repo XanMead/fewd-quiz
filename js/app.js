@@ -40,11 +40,35 @@ function populateCache() {
 		"Rice",
 		"Fish",
 		"uke_mochi.jpg"));
-	questionCache.push(new Question());
-	questionCache.push(new Question());
-	questionCache.push(new Question());
-	questionCache.push(new Question());
-	questionCache.push(new Question());
+	questionCache.push(new Question("Which Shinto text came first?",
+		"Kojiki",
+		"Nihongi",
+		"Yengishiki",
+		"Kogoshui",
+		"text.jpg"));
+	questionCache.push(new Question("Japanese students hoping to pass their exams often pray to...",
+		"Tenjin",
+		"Omoikane",
+		"Hachiman",
+		"Amaterasu",
+		"wishes.jpg"));
+	questionCache.push(new Question("Hikikomori (shut-ins) in Japan could identify with the deity...",
+		"Amaterasu",
+		"Ryūjin",
+		"Susano-o",
+		"Uzume",
+		"hikikomori.jpg"));
+	questionCache.push(new Question("Which of these is not among the three Imperial Regalia of Japan?",
+		"Tonbogiri, the Dragonfly",
+		"Kusanagi, the Sword",
+		"Yata no Kagami, the Mirror",
+		"Yasakani no Magatama, the Jewel",
+		"kyoko.jpg"));
+	questionCache.push(new Question("Which yōkai (supernatural creature) is known for its prodigious testicles and fondness for shapeshifting?",
+		"Tanuki",
+		"Kitsune",
+		"Kawauso",
+		"Mujina"));
 }
 
 /* The current question the quiz is on. */
@@ -57,7 +81,7 @@ function chooseGameQuestions() {
 	gameQuestions = new Array();
 	shuffle(questionCache);
 	for (var i = 0; i < 5; i++) {
-		console.log(gameQuestions[i]);
+		console.log(questionCache[i]);
 		gameQuestions[i] = questionCache[i];
 		gameQuestions[i].shuffleAnswers();
 	}
