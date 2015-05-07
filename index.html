@@ -16,8 +16,8 @@
 			<div class="vertical">Mythology</div>
 			<div class="vertical">Quiz</div>
 		</header>
-		<div class="quiz-intro midbox" style="display: none;">
-
+		<div class="midbox" id="quiz-intro" style="display: none;">
+			<div class="button" id="start">Start</div>
 		</div>
 		<div class="midbox" id="question-box">
 			<h3 class="box-sizing" id="question-text">
@@ -29,11 +29,26 @@
 				<li class="option" id="opt-1">Azuki Beans</li>
 				<li class="option" id="opt-2">Game</li>
 				<li class="option" id="opt-3">Rice</li>
-				<button id="submit">Submit</button>
+				<div class="button" id="submit">Submit</div>
 			</ul>
+		</div>
+		<div class="midbox" id="end-box" style="display: none;">
+			<div class="result"><span id="feedback">You did okay!</span></div>
+			<div class="score">
+				<div class="report"><span id="num-correct">3</span> / 5</div>
+				<div id="scorechart">
+					<img src="images/light-p.png" id="p-0">
+					<img src="images/dark-p.png" id="p-1">
+					<img src="images/light-p.png" id="p-2">
+					<img src="images/light-p.png" id="p-3">
+					<img src="images/dark-p.png" id="p-4">
+				</div>
+			</div>
+			<div class="button" id="again">Again?</div>
 		</div>
 		<div class="status-box">
 			<h2 class="vertical">Question <div id="q-number">4</div></h2>
+			<h2 class="vertical" style="display: none;">Results</h2>
 			<div id="progress">
 				<img src="images/light-p.png" id="p-0">
 				<img src="images/dark-p.png" id="p-1">

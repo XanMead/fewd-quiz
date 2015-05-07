@@ -53,6 +53,16 @@ body {
 	width: 70%;
 	border-radius: 8px;
 	background-image: url(../images/parchment-bg.jpg);
+	min-height: 500px;
+}
+
+#start {
+	font-size: 2rem;
+	margin-top: -3rem;
+	margin-left: -50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 #question-text {
@@ -93,11 +103,13 @@ body {
 	background-color: #202333;
 	color: white;
 	cursor: pointer;
+	border-color: white;
 }
 
-#submit {
-	display: inline-block;
+.button {
+	display: block;
 	margin: 0.5rem auto;
+	padding: 0.5rem;
 	text-align: center;
 	width: 100px;
 	font-family: "Nova Mono", monospace;
@@ -108,9 +120,60 @@ body {
 	border-radius: 10px;
 }
 
-#submit:hover {
+.button:hover {
 	color: #968430;
 	cursor: pointer;
+}
+
+.result {
+	display: inline-block;
+	margin: 1rem 0;
+	height: 500px;
+	line-height: 500px;
+	text-align: center;
+	width: 50%;
+	border-right: 2px dashed black;
+}
+
+#feedback {
+	width: 80%;
+	font-family: 'Arvo', Georgia, serif;
+	font-size: 2rem;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.score {
+	display: inline-block;
+	width: 45%;
+	margin: 1rem auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.report {
+	font-family: "Nova Mono", monospace;
+	font-size: 4rem;
+	padding: 2rem 0;
+	border-bottom: 2px dashed black;
+}
+
+#scorechart {
+	display: block;
+	position: relative;
+	width: 240px;
+	height: 240px;
+	margin: 0 auto;
+}
+
+#scorechart > img {
+	position: absolute;
+	width: 240px;
+	height: auto;
+	margin: 1rem auto;
+	left: 0px;
+	top: 0px;
 }
 
 .status-box {
