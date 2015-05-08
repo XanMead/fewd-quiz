@@ -106,8 +106,8 @@ body {
 	border-color: white;
 }
 
-#selected {
-	border-style: dotted;
+.selected {
+	border: 2px dotted white;
 	background-color: #332020;
 }
 
