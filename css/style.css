@@ -108,6 +108,7 @@ body {
 
 .selected {
 	border: 2px dotted white;
+	color: white;
 	background-color: #332020;
 }
 
@@ -209,25 +210,25 @@ body {
 	top: -11px;
 }
 
-#p1 {
+.p1 {
 	-ms-transform: rotate(72deg); /* IE 9 */
 	-webkit-transform: rotate(72deg); /* Chrome, Safari, Opera */
 	transform: rotate(72deg);
 }
 
-#p2 {
+.p2 {
 	-ms-transform: rotate(144deg); /* IE 9 */
 	-webkit-transform: rotate(144deg); /* Chrome, Safari, Opera */
 	transform: rotate(144deg);
 }
 
-#p3 {
+.p3 {
 	-ms-transform: rotate(216deg); /* IE 9 */
 	-webkit-transform: rotate(216deg); /* Chrome, Safari, Opera */
 	transform: rotate(216deg);
 }
 
-#p4 {
+.p4 {
 	-ms-transform: rotate(288deg); /* IE 9 */
 	-webkit-transform: rotate(288deg); /* Chrome, Safari, Opera */
 	transform: rotate(288deg);
