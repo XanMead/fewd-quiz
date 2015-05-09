@@ -122,7 +122,7 @@ function populateCache() {
 		"Saber-Wielding Badger",
 		"Tatsu (Dragon)",
 		"Burning Wheel",
-		"sessho-seki.jpg"));
+		"sessho-seki.JPG"));
 }
 
 function chooseGameQuestions() {
